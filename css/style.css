@@ -1,12 +1,14 @@
-
 /*------------> globan satting <---------------*/
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+   
 }
 
 body{
     background-color: #f5f8ff;
+   
 }
 /*------------> Common Styles <---------------*/
 
@@ -36,6 +38,8 @@ body{
     background-position: center center;
     background-repeat: no-repeat;
     padding-bottom: 20px;
+    margin: 0 auto;
+    background-color: #4E47FF;
 
 }
 /*------------> Navbar Styles Start <---------------*/
@@ -43,6 +47,9 @@ body{
     height: 100px;
     max-width: 1140px;
     margin: 0 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .nav-section h1{
     font-size:34px;
@@ -53,7 +60,7 @@ body{
 }
 .nav-ul{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -102,9 +109,9 @@ body{
     outline: none;
     font-size: 16px;
     position: absolute;
-    bottom: 0px;
-    left: 40%;
-    transform: translateX(-50%,-50%);
+    bottom: -20px;
+    left: 50%;
+    transform: translate(-50%,-50%);
     transition: 1s ease;
     cursor: pointer;
 
@@ -119,10 +126,17 @@ body{
 /*------------> main Styles Start <---------------*/
 
 .main{
+    margin: 0 auto;
+    max-width: 1440px;
+    height: auto;
+    background-color: #f5f8ff;
+}
+
+.container{
+    margin: 0px 120px;
     max-width: 1140px;
     height: auto;
-    margin: 120px 120px 0px 120px;
-
+    background-color: #f5f8ff;
 }
 /*------------> Action Styles Start <---------------*/
 
@@ -130,6 +144,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 120px;
 
 }
 
@@ -296,7 +311,7 @@ body{
 
 .focus-section{
     max-width: 1140px;
-    height: 495px;
+    height: auto;
     padding: 70px 120px;
     display: flex;
     justify-content: center;
@@ -447,6 +462,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
 }
 .footer-content{
     text-align: center;
@@ -491,4 +507,4 @@ body{
 }
 .footer-ul li a:hover{
     color: #564db9;
-}
+}     
